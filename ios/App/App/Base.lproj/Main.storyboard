@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Uu0-IW-IKl">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ocv-IF-s1O">
+            <objects>
+                <viewController id="Uu0-IW-IKl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aiF-DL-Wjw"/>
+                        <viewControllerLayoutGuide type="bottom" id="uDI-eC-EkA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ort-n0-V88">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qc4-Lc-Jl2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="SxA-7v-bbR" kind="embed" id="Mfz-Wp-nVb"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qc4-Lc-Jl2" firstAttribute="leading" secondItem="ort-n0-V88" secondAttribute="leading" id="62E-CM-hjg"/>
+                            <constraint firstItem="qc4-Lc-Jl2" firstAttribute="top" secondItem="ort-n0-V88" secondAttribute="top" id="Gy4-cY-gc9"/>
+                            <constraint firstAttribute="trailing" secondItem="qc4-Lc-Jl2" secondAttribute="trailing" id="Nbu-W2-q2K"/>
+                            <constraint firstAttribute="bottom" secondItem="qc4-Lc-Jl2" secondAttribute="bottom" id="RKB-nI-VNn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmT-Lt-9o4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1091" y="133"/>
+        </scene>
+        <!--Bridge View Controller-->
+        <scene sceneID="IIK-fS-Kep">
+            <objects>
+                <viewController id="SxA-7v-bbR" customClass="CAPBridgeViewController" customModule="Capacitor" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dco-yy-8ju">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6z-3D-Vlu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-334" y="164"/>
+        </scene>
+    </scenes>
+</document>

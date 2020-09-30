@@ -20,8 +20,12 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+	this.statusBar.styleDefault();
+	this.splashScreen.hide();
+	console.log("initial size: " + window.innerWidth + " x " + window.innerHeight);
+	window.addEventListener('orientationchange', function() {
+	    console.log("orientationchange: " + window.innerWidth + " x " + window.innerHeight);
+	});
     });
   }
 }
